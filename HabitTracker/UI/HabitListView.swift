@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct HabitListView: View {
-    let habits: [String] = ["1", "2", "3"]
+struct HabitListView<Habit: HabitRowData>: View {
+    let habits: [Habit]
     
     var body: some View {
         List {
-            ForEach(habits, id: \.self) { habit in
+            ForEach(habits) { habit in
                 HabitRow(habit: habit)
             }
         }
@@ -21,16 +21,23 @@ struct HabitListView: View {
 
 
 // MARK: - Row
-fileprivate struct HabitRow: View {
-    let habit: String
+fileprivate struct HabitRow<Habit: HabitRowData>: View {
+    let habit: Habit
     
     var body: some View {
-        Text(habit)
+        Text(habit.name)
     }
 }
 
 
 // MARK: - Preview
 #Preview {
-    HabitListView()
+    HabitListView<MockHabit>(habits: [])
+}
+
+
+// MARK: - Dependencies
+protocol HabitRowData: Identifiable {
+    var id: String { get }
+    var name: String { get }
 }

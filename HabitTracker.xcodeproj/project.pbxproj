@@ -12,6 +12,7 @@
 		D4F84BCB2BA35E5E0063FCD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F84BCA2BA35E5E0063FCD4 /* Assets.xcassets */; };
 		D4F84BCE2BA35E5E0063FCD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F84BCD2BA35E5E0063FCD4 /* Preview Assets.xcassets */; };
 		D4F84BD52BA35E9B0063FCD4 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F84BD42BA35E9B0063FCD4 /* HabitListView.swift */; };
+		D4F84BDA2BA364B20063FCD4 /* MockHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F84BD92BA364B20063FCD4 /* MockHabit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D4F84BCA2BA35E5E0063FCD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4F84BCD2BA35E5E0063FCD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D4F84BD42BA35E9B0063FCD4 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
+		D4F84BD92BA364B20063FCD4 /* MockHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHabit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +55,10 @@
 		D4F84BC52BA35E5D0063FCD4 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D4F84BD72BA364960063FCD4 /* App */,
 				D4F84BD62BA35E9E0063FCD4 /* UI */,
-				D4F84BC62BA35E5D0063FCD4 /* HabitTrackerApp.swift */,
-				D4F84BCA2BA35E5E0063FCD4 /* Assets.xcassets */,
 				D4F84BCC2BA35E5E0063FCD4 /* Preview Content */,
+				D4F84BD82BA3649C0063FCD4 /* Resources */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -64,6 +66,7 @@
 		D4F84BCC2BA35E5E0063FCD4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				D4F84BDB2BA364B40063FCD4 /* List */,
 				D4F84BCD2BA35E5E0063FCD4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -76,6 +79,30 @@
 				D4F84BD42BA35E9B0063FCD4 /* HabitListView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		D4F84BD72BA364960063FCD4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D4F84BC62BA35E5D0063FCD4 /* HabitTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D4F84BD82BA3649C0063FCD4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4F84BCA2BA35E5E0063FCD4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D4F84BDB2BA364B40063FCD4 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D4F84BD92BA364B20063FCD4 /* MockHabit.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F84BDA2BA364B20063FCD4 /* MockHabit.swift in Sources */,
 				D4F84BD52BA35E9B0063FCD4 /* HabitListView.swift in Sources */,
 				D4F84BC92BA35E5D0063FCD4 /* ContentView.swift in Sources */,
 				D4F84BC72BA35E5D0063FCD4 /* HabitTrackerApp.swift in Sources */,
